@@ -1,0 +1,106 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+   
+    int i,point=0,num[10],dci=0,len,count=0;
+    string str;
+    float frc=0;
+    cout<<"Enter a octal number: ";
+    cin>>str;
+    len=str.length();
+    point=str.find('.');
+    if(point==-1)
+    {
+    count=len-1;
+    for(i=0;i<len;i++)
+    {
+    if(str[i]=='0')
+    num[i]=0;
+    if(str[i]=='1')
+    num[i]=1;
+    else
+    if(str[i]=='2')
+    num[i]=2;
+    else
+    if(str[i]=='3')
+    num[i]=3;
+    else
+    if(str[i]=='4')
+    num[i]=4;
+    else
+    if(str[i]=='5')
+    num[i]=5;
+    else
+    if(str[i]=='6')
+    num[i]=6;
+    else
+    if(str[i]=='7')
+    num[i]=7;
+    dci=dci+(num[i]*(pow(8,count)));
+    count--;
+    }
+    cout<<"Output: "<<dci;
+    }
+    else
+    {
+    count=point-1;
+    for(i=0;i<point;i++)
+    {
+    if(str[i]=='0')
+    num[i]=0;
+    if(str[i]=='1')
+    num[i]=1;
+    else
+    if(str[i]=='2')
+    num[i]=2;
+    else
+    if(str[i]=='3')
+    num[i]=3;
+    else
+    if(str[i]=='4')
+    num[i]=4;
+    else
+    if(str[i]=='5')
+    num[i]=5;
+    else
+    if(str[i]=='6')
+    num[i]=6;
+    else
+    if(str[i]=='7')
+    num[i]=7;
+    dci=dci+(num[i]*(pow(8,count)));
+    count--;
+    }
+    count=1;
+    for(i=point+1;i<len;i++)
+    {
+    if(str[i]=='0')
+    num[i]=0;
+    if(str[i]=='1')
+    num[i]=1;
+    else
+    if(str[i]=='2')
+    num[i]=2;
+    else
+    if(str[i]=='3')
+    num[i]=3;
+    else
+    if(str[i]=='4')
+    num[i]=4;
+    else
+    if(str[i]=='5')
+    num[i]=5;
+    else
+    if(str[i]=='6')
+    num[i]=6;
+    else
+    if(str[i]=='7')
+    num[i]=7;   
+    frc=frc+(num[i]/(pow(8,count)));
+    ++count;
+    }
+    cout<<"Output: "<<dci+frc;
+    }
+}

@@ -544,9 +544,9 @@ float bifrdci()
     int i,point=0,num[10],dci=0,len,count=0;
     float frc=0;
     string str;
-    cout<<"Enter a binary number (0.Menu): ";
+    cout<<"Enter a binary number (-1.Menu): ";
     cin>>str;
-    if(str[0]=='0')
+    if(str[0]=='-')
     main();
     len=str.length();
     point=str.find('.');

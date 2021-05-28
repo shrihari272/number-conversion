@@ -38,7 +38,7 @@ int main()
 void test::display()
 {   
     line();
-    cout<<"\nMenu\n1.Decimal\n2.Binary\n3.Octal\n4.Hexadecimal\n5.Exit ";
+    cout<<"\nMenu\n1.Decimal\n2.Binary\n3.Octal\n4.Hexadecimal\n5.Clear_screen\n6.Exit ";
     cout<<"\nEnter your choice: ";
     cin>>choice;
     line();
@@ -169,7 +169,9 @@ void test::display()
                goto invalid;
                }
                break;
-        case 5:exit(0);
+        case 5:system("cls");
+               break;
+        case 6:exit(0);
         default :cout<<"Invalid choice\n";
     }
 }
@@ -801,7 +803,7 @@ float hexfrdci()
         if(str[i]=='F' || str[i]=='f')
         a[i]=15;
         hex=hex+a[i]*(pow(16,count));
-        count++;
+        count--;
      }
     return hex;
     }

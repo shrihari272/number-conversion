@@ -30,9 +30,7 @@ int main()
 {
     test t;
     for(;;)
-    {
     t.display();
-    }
     return 0;
 }
 void test::display()
@@ -194,9 +192,7 @@ void test::dcitobi()
     }
     cout<<"Output: ";
     for(i=count-1;i>=0;i--)
-    {
-        cout<<a[i];
-    }
+    cout<<a[i];
     cout<<".";
     for(i=1;i<=6;i++)
     { 
@@ -227,9 +223,7 @@ void test::dcitoo()
     }
     cout<<"Output: ";
     for(i=count-1;i>=0;i--)
-    {
-        cout<<a[i];
-    }
+    cout<<a[i];
     if(num<f)
     odci(f);
     cout<<endl;
@@ -282,12 +276,9 @@ void test::dcitohex()
         if(rev[i]==15)
         cout<<"F";
      
-        if(rev[i]!=10&&rev[i]!=11 &&rev[i]!=12 &&rev[i]!=13&&rev[i]!=14 &&rev[i]!=15 )
-        {
+        if(rev[i]!=10&&rev[i]!=11 &&rev[i]!=12 &&rev[i]!=13&&rev[i]!=14 &&rev[i]!=15)
         cout<<rev[i];
-        }
     }
-
     if(num<f)
     hexdci(f);
     cout<<endl;
@@ -319,9 +310,7 @@ void test::bitoo()
     }
     cout<<"Output: ";
     for(i=count-1;i>=0;i--)
-    {
-        cout<<a[i];
-    }
+    cout<<a[i];
     if(num<f)
     odci(f);
     cout<<endl;
@@ -339,8 +328,7 @@ void test::bitohex()
         r=num%16;
         num=num/16;
         a[i]=r;
-        ++count;
-      
+        ++count; 
     }
     j=0;
     for(i=count-1;i>=0;i--)
@@ -369,10 +357,8 @@ void test::bitohex()
         if(rev[i]==15)
         cout<<"F";
      
-        if(rev[i]!=10&&rev[i]!=11 &&rev[i]!=12 &&rev[i]!=13&&rev[i]!=14 &&rev[i]!=15 )
-        {
+        if(rev[i]!=10&&rev[i]!=11 &&rev[i]!=12 &&rev[i]!=13&&rev[i]!=14 &&rev[i]!=15)
         cout<<rev[i];
-        }
     }
 
     if(num<f)
@@ -404,9 +390,7 @@ void test::otobi()
     }
     cout<<"Output: ";
     for(i=count-1;i>=0;i--)
-    {
-        cout<<a[i];
-    }
+    cout<<a[i];
     cout<<".";
     for(i=1;i<=6;i++)
     { 
@@ -463,10 +447,8 @@ void test::otohex()
         if(rev[i]==15)
         cout<<"F";
      
-        if(rev[i]!=10&&rev[i]!=11 &&rev[i]!=12 &&rev[i]!=13&&rev[i]!=14 &&rev[i]!=15 )
-        {
+        if(rev[i]!=10&&rev[i]!=11 &&rev[i]!=12 &&rev[i]!=13&&rev[i]!=14 &&rev[i]!=15)
         cout<<rev[i];
-        }
     }
 
     if(num<f)

@@ -356,11 +356,9 @@ void test::bitohex()
         else
         if(rev[i]==15)
         cout<<"F";
-     
         if(rev[i]!=10&&rev[i]!=11 &&rev[i]!=12 &&rev[i]!=13&&rev[i]!=14 &&rev[i]!=15)
         cout<<rev[i];
     }
-
     if(num<f)
     hexdci(f);
     cout<<endl;
@@ -417,8 +415,7 @@ void test::otohex()
         r=num%16;
         num=num/16;
         a[i]=r;
-        ++count;
-      
+        ++count; 
     }
     j=0;
     for(i=count-1;i>=0;i--)
@@ -446,7 +443,6 @@ void test::otohex()
         else
         if(rev[i]==15)
         cout<<"F";
-     
         if(rev[i]!=10&&rev[i]!=11 &&rev[i]!=12 &&rev[i]!=13&&rev[i]!=14 &&rev[i]!=15)
         cout<<rev[i];
     }
@@ -483,9 +479,7 @@ void test::hextoo()
     }
     cout<<"Output: ";
     for(i=count-1;i>=0;i--)
-    {
-        cout<<a[i];
-    }
+    cout<<a[i];
     if(num<f)
     odci(f);
     cout<<endl;
@@ -508,9 +502,7 @@ void test::hextobi()
     }
     cout<<"Output: ";
     for(i=count-1;i>=0;i--)
-    {
-        cout<<a[i];
-    }
+    cout<<a[i];
     cout<<".";
     for(i=1;i<=6;i++)
     { 
@@ -591,7 +583,7 @@ void hexdci(float f)
     int d,i;
     cout<<".";
     for(i=1;i<=6;i++)
-   { 
+    { 
     f=f*16;
     d=f; 
     if(d==10)
@@ -612,7 +604,7 @@ void hexdci(float f)
     if(d==15)
     cout<<"F";
     if(d!=10&&d!=11 &&d!=12 &&d!=13&&d!=14 &&d!=15 )
-     cout<<d;
+    cout<<d;
     if(d>=1)
     f=f-d;
     }  
@@ -716,7 +708,7 @@ float ofrdci()
     if(str[i]=='7')
     num[i]=7;   
     frc=frc+(num[i]/(pow(8,count)));
-    ++count;
+    count++;
     }
     return dci+frc;
     }
@@ -846,7 +838,7 @@ float hexfrdci()
         }
     count=1;
     for(i=point+1;i<len;i++)
-    {
+      {
        if(str[i]=='0')
         a[i]=0;
         else
@@ -896,13 +888,12 @@ float hexfrdci()
         a[i]=15;
         frc=frc+a[i]/(pow(16,count));
         count++;  
-    }
+      }
       return hex+frc; 
-  }
+   }
 }
 void test::line()
 {
-    int i;
     for(i=0;i<=20;i++)
     cout<<"---";
     cout<<endl;

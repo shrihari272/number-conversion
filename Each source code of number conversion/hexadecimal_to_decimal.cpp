@@ -1,6 +1,5 @@
 #include<iostream>
 #include<math.h>
-#include<string.h>
 using namespace std;
 void hexfrdci();
 int main()

@@ -70,7 +70,7 @@ void hexfrdci()
         if(str[i]=='F' || str[i]=='f')
         a[i]=15;
         hex=hex+a[i]*(pow(16,count));
-        count++;
+        count--;
      }
     cout<<"Output: "<<hex;
     }
@@ -183,7 +183,7 @@ void hexfrdci()
         count++;  
       }
       cout<<"Output: "<<hex+frc;
-  }
+   }
 }
     
 

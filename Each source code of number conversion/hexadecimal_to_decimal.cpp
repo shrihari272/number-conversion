@@ -184,7 +184,3 @@ void hexfrdci()
       cout<<"Output: "<<hex+frc;
    }
 }
-    
-
-
-

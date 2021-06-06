@@ -445,7 +445,6 @@ void test::otohex()
     if(rev[i]!=10&&rev[i]!=11 &&rev[i]!=12 &&rev[i]!=13&&rev[i]!=14 &&rev[i]!=15)
     cout<<rev[i];
     }
-
     if(num<f)
     hexdci(f);
     cout<<endl;

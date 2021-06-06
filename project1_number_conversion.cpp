@@ -226,9 +226,8 @@ void test::dcitoo()
     cout<<a[i];
     if(num<f)
     odci(f);
-    cout<<endl;
-    
-}
+    cout<<endl; 
+  }
 }
 void test::dcitohex()
 {
@@ -246,8 +245,7 @@ void test::dcitohex()
         r=num%16;
         num=num/16;
         a[i]=r;
-        count++;
-      
+        count++;  
     }
     j=0;
     for(i=count-1;i>=0;i--)
